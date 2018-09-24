@@ -1,4 +1,4 @@
-# MEAN STACK STARTER - MongoDB + ExpressJS + Angular + Angular Material + NodeJS
+# MEAN STACK STARTER - MongoDB + ExpressJS + Angular 5 + Angular Material + NodeJS
 
 
 ## Installation
