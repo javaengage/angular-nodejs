@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" id="toolbar">
+  <div class="left">
+    <span id="title">Angular NodeJs</span>
+  </div>
+
+  <button id="menu" *ngIf="!user" mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <button id="menu" *ngIf="user" mat-button [matMenuTriggerFor]="menu">{{user.data.name}} - {{user.data.role}}</button>
+
+  <mat-menu #menu="matMenu" >
+    <button mat-menu-item routerLink="/login" *ngIf="!user">
+      <mat-icon>note_add</mat-icon>
+      <span>Login</span>
+    </button>
+    <button mat-menu-item routerLink="" *ngIf="!user">
+      <mat-icon>view_headline</mat-icon>
+      <span>Sign Up</span>
+    </button>
+    <button mat-menu-item (click)="signout()" *ngIf="user">
+      <mat-icon>note_add</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

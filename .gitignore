@@ -1,0 +1,27 @@
+# compiled output
+/public/dist
+/public/tmp
+/public/out-tsc
+
+# dependencies
+/node_modules
+
+# misc
+/public/.sass-cache
+/public/connect.lock
+/public/coverage
+/public/libpeerconnection.log
+/public/typings
+npm-debug.log
+testem.log
+
+# e2e
+/public/e2e/*.js
+/public/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.idea/
+

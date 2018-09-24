@@ -1,0 +1,8 @@
+<h1 class="mat-display-1" style="margin-top:2em; text-align:center;">Events Map</h1>
+
+<div >
+  <agm-map [latitude]="lat" [longitude]="lng">
+
+    <agm-marker *ngFor="let event of events" [latitude]="event.lat" [longitude]="event.lng" [label]="event.eventName"></agm-marker>
+  </agm-map>
+</div>

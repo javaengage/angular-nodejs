@@ -1,0 +1,18 @@
+<h1 class="mat-display-1" style="margin-top:2em; text-align:center;">Events</h1>
+<div style="text-align: right; margin-right: 50px;">
+  <button *ngIf="user.data.role == 'admin'"  mat-button color="primary" (click)="goToNewEventsMapPage()">Events Map</button>
+  <button  mat-button color="primary" (click)="goToNewEventsPage()">Create Event</button>
+
+</div>
+
+<mat-card *ngFor="let event of events">
+  <mat-card-title>{{event.name}}</mat-card-title>
+  <mat-card-content>
+    <p>{{event.venue}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button  mat-button color="warn" (click)="deleteEvent(event)" >Delete</button>
+    <button  mat-button color="primary" (click)="editEvent(event)" >Edit</button>
+
+  </mat-card-actions>
+</mat-card>

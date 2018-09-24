@@ -1,0 +1,17 @@
+<h1 class="mat-display-1" style="margin-top:2em; text-align:center;">Login</h1>
+
+<mat-card>
+  <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="email" name="email" type="email" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="password" name="password" type="password" placeholder="Password" />
+    </mat-form-field>
+
+    <mat-card-actions>
+      <button type="submit" mat-button color="primary">Login</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

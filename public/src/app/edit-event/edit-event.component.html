@@ -1,0 +1,29 @@
+<h1 class="mat-display-1" style="margin-top:2em; text-align:center;">Edit Event</h1>
+
+<mat-card>
+  <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="event.name" name="name" type="text" placeholder="Event Name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="event.venue" name="venue" type="text" placeholder="Event Venue">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="event.time" name="time" type="text" placeholder="Event Time : 14:00">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="event.lat" name="lat" type="text" placeholder="Latitude : 3.69485039">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="event.lng" name="lng" type="text" placeholder="Longitude : 5.38402938">
+    </mat-form-field>
+
+    <mat-card-actions>
+      <button type="submit" mat-button color="primary">Edit</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
